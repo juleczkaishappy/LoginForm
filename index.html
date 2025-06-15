@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zadanie testowe - rekrutacja</title>
+	<link rel="stylesheet" href="styl.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="page-container">
+	<header>
+     <div class="menu-container">
+         <div class="menu-container-left">
+            <ul class="menu">
+                <li>
+                    <a href="#" class="menu-left">Buy</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-left">Sell</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-left">About</a>
+                </li>
+            </ul>
+            <div class="block"></div>
+         </div>
+         <div class="menu-container-right">
+             <ul class="menu">
+                 <li>
+                     <a href="#" class="menu-register">Register</a>
+                 </li>
+                 <li>
+                     <a href="#" class="menu-login">Login</a>
+                 </li>
+             </ul>
+         </div>
+     </div>   
+    </header>
+    <nav class="breadcrumbs">
+        <a href="#"> Home </a> / <span> Login </span>
+    </nav>
+
+    <main>
+        <h1>
+            <span class="h1-text">Login</span>
+        </h1>
+        <p class="subtitle">To access your account</p>
+        <div class="blue"></div>
+        <div class="login-container">
+            <div class="login-left">
+                <form action="/login" method="post">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                     maxlength="100"
+                />
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                />
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="7"
+                    maxlength="25"
+                />
+                <a href="#" class="forgot">Forgot Password?</a>
+                <button type="submit" class="button-login">Login</button>
+                </form>
+                </div>
+            <div class="login-right">
+                <p class="t">Not a member?</p>
+                <button class="button-register">Register today</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    </div>
+</body>
+</html>
