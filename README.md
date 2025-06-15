@@ -24,4 +24,4 @@ Projekt został stworzony w czystym **HTML5** i **CSS3** z zachowaniem kompatybi
 ## Uwagi
 
 - Kolory zostały dobrane zgodnie z dołączoną makietą, mimo że kontrast nie jest idealny według standardów **WCAG 2.1**.
-- Projekt nie zawiera wsparcia dla przeglądarek, ponieważ współczesne przeglądarki mają priorytet.
+- Projekt nie zawiera wsparcia dla starych przeglądarek (IE8 - IE11), ponieważ współczesne przeglądarki mają priorytet.
