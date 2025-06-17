@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Zadanie testowe - rekrutacja</title>
-	<link rel="stylesheet" href="styl.css">
+    <meta charset="utf-8">
+    <title>Zadanie testowe - rekrutacja</title>
+    <link rel="stylesheet" href="styl.css">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="page-container">
-	<header>
+    <header>
      <div class="menu-container">
          <div class="menu-container-left">
             <ul class="menu">
@@ -35,8 +35,31 @@
                  </li>
              </ul>
          </div>
-     </div>   
+     </div>
+     <div class="hamburger-cointainer">
+         <div class="hamburger" id="hamburger">&#9776;</div>
+     </div>  
+     <div class="mobile-menu" id="mobileMenu">
+         <ul>
+             <li>
+                <a href="#" class="menu-left">Buy</a>
+            </li>
+             <li>
+                <a href="#" class="menu-left">Sell</a>
+            </li>
+             <li>
+                <a href="#" class="menu-left">About</a>
+            </li>
+             <li>
+                <a href="#" class="menu-left">Register</a>
+            </li>
+             <li>
+                <a href="#" class="menu-left">Login</a>
+            </li>
+         </ul>
+     </div>
     </header>
+
     <nav class="breadcrumbs">
         <a href="#"> Home </a> / <span> Login </span>
     </nav>
@@ -46,7 +69,10 @@
             <span class="h1-text">Login</span>
         </h1>
         <p class="subtitle">To access your account</p>
-        <div class="blue"></div>
+
+        <div class="login-wrapper">
+            <div class="blue"></div>
+
         <div class="login-container">
             <div class="login-left">
                 <form action="/login" method="post">
@@ -83,10 +109,35 @@
                 <button class="button-register">Register today</button>
             </div>
         </div>
+        </div>
     </main>
-
     <footer class="footer"></footer>
-
     </div>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => 
+    {
+        if (mobileMenu.style.display === 'block') 
+        {
+            mobileMenu.style.display = 'none';
+        } 
+        else 
+        {
+            mobileMenu.style.display = 'block';
+        }
+    });
+
+     window.addEventListener('resize', () => 
+     {
+        if (window.innerWidth > 768) 
+        {
+            mobileMenu.style.display = 'none';
+        }
+    });
+</script>
+
 </body>
 </html>
