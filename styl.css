@@ -145,7 +145,7 @@ h1::after {
 .blue {
     display: flex;
     position: absolute;
-   	top: -50px;
+   	top: -40px;
    	right: 45px;
     width: 26%;
     height: 120%;
