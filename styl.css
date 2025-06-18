@@ -266,7 +266,7 @@ form input {
     top: 7%;
     width: 100%;
     background-color: #CECDCD; 
-    z-index: 2;
+    z-index: 3;
 }
 
 .mobile-menu ul {
